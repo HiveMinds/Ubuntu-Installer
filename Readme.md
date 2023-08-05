@@ -37,6 +37,9 @@ mkdir -p ~/qemus
 cd ~/qemus
 
 # Download the Ubuntu iso.
+#wget https://releases.ubuntu.com/jammy/ubuntu-22.04.2-desktop-amd64.iso
+wget https://releases.ubuntu.com/lunar/ubuntu-23.04-desktop-amd64.iso
+
 
 # Then create image with:
 qemu-img create ubuntu.img 30G
@@ -73,6 +76,7 @@ qemu-system-x86_64 \
   --enable-kvm \
   -m 1024 \
   -machine smm=off \
+  -cdrom $PWD/ubuntu-23.04-desktop-amd64.iso \
   -cdrom ~/Downloads/ubuntu-22.04.1-desktop-amd64.iso \
   -boot order=d ${release}.qcow2
 ```

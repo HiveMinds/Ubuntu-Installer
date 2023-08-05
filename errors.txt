@@ -1,0 +1,23 @@
+try0.sh
+Starting install...
+ERROR    Couldn't find kernel for install tree.
+Domain installation does not appear to have been successful.
+If it was, you can restart your domain by running:
+  virsh --connect qemu:///system start ubu0
+otherwise, please restart your installation.
+
+
+try2.sh
+Starting install...
+ERROR    Couldn't find kernel for install tree.
+Domain installation does not appear to have been successful.
+If it was, you can restart your domain by running:
+  virsh --connect qemu:///system start ubu2
+otherwise, please restart your installation.
+
+try3.sh
+c$ ./try3.sh
+WARNING  --os-type is deprecated and does nothing. Please stop using it.
+ERROR    location kernel/initrd must be be specified as a pair
+(base) name@name:~/git/HiveMinds/Ubuntu-Installer/src$ 
+
